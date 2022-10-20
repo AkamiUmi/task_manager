@@ -17,6 +17,7 @@ class _TasksScreenState extends State<TasksScreen> {
   void _addTask(BuildContext context) {
     showModalBottomSheet(
         context: context,
+        isScrollControlled: true,
         builder: (context) => SingleChildScrollView(
               child: Container(
                 padding: EdgeInsets.only(
